@@ -192,6 +192,9 @@ public class MyTestExecutor {
         suite.setDataProviderThreadCount(deviceCount);
         suite.setParallel(ParallelMode.TESTS);
         suite.setVerbose(2);
+        if (prop.getProperty("LISTENERS") != null) {
+            suite.setListeners(listeners);
+        }
         suite.setListeners(listeners);
         for (int i = 0; i < deviceCount; i++) {
             XmlTest test = new XmlTest(suite);

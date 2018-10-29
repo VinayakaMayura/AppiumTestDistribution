@@ -1,5 +1,7 @@
 package com.test.site;
 
+import com.appium.manager.AppiumDriverManager;
+import com.appium.utils.ApplitoolsListener;
 import com.appium.utils.ScreenShotManager;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
